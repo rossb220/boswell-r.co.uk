@@ -1,0 +1,3 @@
+node_modules/
+resouces/_gen
+.hugo_build.lock

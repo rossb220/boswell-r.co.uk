@@ -1,0 +1,7 @@
+baseURL = 'https://boswell-r.co.uk'
+languageCode = 'en-gb'
+title = 'Ross Boswell Site'
+
+[params]
+  author = 'Ross'
+  email = 'rboswell220@gmail.com'

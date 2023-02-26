@@ -1,0 +1,54 @@
+@import "node_modules/normalize.css/normalize";
+
+
+$backgroundColor: {{ .Site.Params.background_color | default "#282a36" }};
+$primaryColor: {{ .Site.Params.primary_color | default "#8be9fd" }};
+$textColor: {{ .Site.Params.text_color | default "#f8f8f2" }};
+
+body {
+  background-color: $backgroundColor;
+  color: $textColor;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+a {
+  color: $primaryColor;
+  text-decoration: none;
+}
+
+p {
+  line-height: 2.2;
+  font-size: 14px;
+}
+
+html, body, main {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 690px;
+  padding: 1.5rem;
+}
+
+.profile-container {
+  text-align: center;
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+

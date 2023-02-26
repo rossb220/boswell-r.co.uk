@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main aria-role="main">
+        <div class="wrapper">
+
+        <div class='profile-container'>
+                <img class='profile' src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.email }}?s=250&d=identicon">
+        </div>
+        <div class="content-container">
+                <h3>My name is {{.Site.Params.author }} &#128075; </h3>
+                {{.Content}}
+        </div>
+        </div>
+</main>
+{{ end }}
